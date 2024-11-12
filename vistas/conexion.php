@@ -1,14 +1,15 @@
 <?php
-$servername = "ti32.com";
-$database = "u297692415_proyecto_renat";
-$username = "u297692415_arturo";
-$password = "QUIQUE?si5002";
-// Create connection
-$conex = mysqli_connect($servername, $username, $password, $database);
-// Check connection
-if (!$conex) {
-    die("Connection failed: " . mysqli_connect_error());
+//Configuracion de variables
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "awos2_2024";
+
+//crea la conexion
+$conn = new mysqli($servername, $username, $password,$dbname);
+
+// verificar la conexion
+if($conn->connect_error){
+    die("Conexion fallidas: " .$conn->connect_error);
 }
-echo "Connected successfully";
-mysqli_close($conex);
 ?>

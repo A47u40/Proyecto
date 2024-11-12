@@ -1,0 +1,172 @@
+:root {
+    --white: #e9e9e9;
+    --gray: #333;
+    --blue: #0367a6;
+    --lightblue: #008997;
+    --button-radius: 0.7rem;
+    --max-width: 758px;
+    --max-height: 420px;
+
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* Reset de margenes padding */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f8f9fa;
+}
+
+/* Barra lateral del sidebar */
+.sidebar {
+	width: 220px;
+	height: 100vh;
+	background-image: linear-gradient(90deg, var(--blue) 0%, var(--lightblue) 74%);
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-top: 20px;
+	color: white;
+	transition: width 0.3s ease;
+	overflow-y: auto;
+
+
+}
+
+.sidebar h4{
+	text-align: center;
+	color: #e9ecef;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.sidebar hr{
+	background-color: #de898933;
+}
+
+.sidebar a{
+	color: white;
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+
+}
+
+.sidebar a:hover {
+	background-image: linear-gradient(90deg, var(--lightblue) 0%, var(--blue) 74%);
+}
+
+/* Contenido en main-content */
+.main-content{
+	margin-left: 220px;
+	padding: 20px;
+	transition: margin-left 0.3s ease;
+	text-aling: left;
+}
+
+.main-content h2 {
+	font-size: 24px;
+	text-align: center;
+} 
+
+.main-content p{
+	font-size: 18px;
+	color: #333;
+}
+
+hr{
+	margin: 10px 0;
+	border: 0;
+	border-top: 1px solid #ddd;
+}
+
+/* Estilos de tabla */
+table{
+	width: 100%;
+	border-collapse: collapse;
+	border-color: white;
+}
+
+table, th, td {
+	border: 1px solid #ddd;
+	
+}
+
+th,td{
+	padding: 12px;
+	text-align: left;
+}
+
+th{
+	background-color: #343a40;
+	color: white;
+}
+
+tr:nth-child(even) {
+	background-color: f2f2f2;
+}
+
+tr:hover{
+	background-color: #ddd;
+}
+
+/* Boton de logout */
+.logout-btn{
+	color: white;
+	background-color: #dc3545;
+	padding: 10px 20px;
+	text-align: center;
+	display: black;
+	margin-top: 10px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+#logout-btn:hover {
+    background-color: #c82333;
+}
+
+/*responsividad*/
+/*para pantallas menores a 768px*/
+@media screen and (max-width: 768px){
+    .sidebar{
+        width: 180px;
+    }
+    .main-content {
+        margin-left: 180px;
+    }
+
+    table, th, td{
+        font-size: 12px;
+    }
+}
+
+/*para pantallas menores a 576px*/
+@media screen and (max-width: 576px){
+    .sidebar{
+        width: 100px;
+    }
+    .siebar a {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .main-content {
+        margin-left: 100px;
+        padding: 10px;
+    }
+
+    table, th, td {
+        font-size: 10px;
+    }
+
+    th,td{
+        padding: 8px;
+    }
+}

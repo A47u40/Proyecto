@@ -1,3 +1,20 @@
+<?php
+// incluir la conexion a la red
+include 'conexion.php';
+
+//iniciar sesion de usuario
+session_start();
+
+//verificar si el usuario ha iniciado sesion y si no redirigirlo a login
+if (!isset($_SESSION['rol'])) {
+    header('Location: login.php');
+    exit;
+}
+
+//escapar el valor de rol para prevenir ataques XSS
+$rol = htmlspecialchars($_SESSION['rol']);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,10 +48,14 @@
                 <a href="#">Contacto</a>
             </li>
             <li>
-            <a href="../index.html">Cerrar sesion</a>
+                <a href="panelControl.php">Panel de Control</a>
+            </li>
+            <li>
+            <a href="logout.php" id="logout-btn">Salir <i class="fas fa-sign-out-alt"></i></a>
             </li>
             
         </ul>
+
 
         </div> 
 
