@@ -2,53 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css ">
-    <title>clia     </title>
+    <title>Clima Polar</title>
 </head>
 <body>
-    <header>
-		<div class="inner">
-			<div class="logo"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/wwf-logo.png"></div>
-			<div class="burger"></div>
-			<nav>
-				<a class="active" href="#">Species</a>
-				<a href="#">About Us</a>
-				<a href="#">Our Work</a>
-				<a class="" href="#">Login</a>
-			</nav>
-		</div>
-	</header>
-    <div class="card">       
-        <h2>Scroll Now<br>Thank Later</h2>
-        <button><a href="#footer">Scroll</a></button>
-        
+    <div class="pagina">
+        <div class="header">
+            <!--Logo de la web-->
+            <img src="img/logo2.png" alt="#">
+            <!--Nombre de la web-->
+            <a href="#"><h2>Clima del Pacifico</h2></a>
+
+            <!--Apartados de la web-->
+            <a href="#">Productos</a>
+            <a href="#">¿Quienes somos?</a>
+            <a href="#">Vision</a>
+            <a href="#">Mision</a>
+            <a href="#">Contacto</a>
         </div>
 
-        <footer id="footer">
-        <div class="col col1">
-            <h3>CoolSite</h3>
-            <p>Made with <span style="color: #BA6573;">❤</span> by Jux</p>
-            <div class="social">
-            <a href="https://codepen.io/Juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/codepen_1.png" alt="" /></a>
-            <a href="https://twitter.com/juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
-            <a href="https://youtube.com/@juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/youtube_1.png" alt="" /></a>
+        <div class="productos">
+
+        </div>
+
+        <div class="quienesSomos">
+
+        </div>
+
+        <div class="vision">
+
+        </div>
+
+        <div class="mision">
+
+        </div>
+
+
+        <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img class="logo" src="img/logo2.png" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
             </div>
-            <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
-        </div>
-        <div class="col col2">
-            <p>About</p>
-            <p>Our mission</p>
-            <p>Privacy Policy</p>
-            <p>Terms of service</p>
-        </div>
-        <div class="col col3">
-            <p>Services</p>
-            <p>Products</p>
-            <p>Join our team</p>
-            <p>Partner with us</p>
-        </div>
-        <div class="backdrop"></div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+            </div>
+                <div class="grupo-2">
+                <small>&copy; 2024 <b>Clima Polar del Pacifico</b> - Todos los Derechos Reservados.</small>
+            </div>
         </footer>
+    </div>
+
+    <div class="perfil">
+        
+    </div>
+
+    <div class="panelControl">
+
+    </div>
 </body>
 </html>
